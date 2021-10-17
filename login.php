@@ -8,6 +8,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 
 $sql = "SELECT * FROM studentinfo WHERE email = '$email'";
+
 $query = mysqli_query(getconnection(), $sql);
 if($query->num_rows) {
     $user = mysqli_fetch_assoc($query);

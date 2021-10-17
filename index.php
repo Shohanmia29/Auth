@@ -17,6 +17,7 @@
     if(isset($_SESSION['user']) && $_SESSION['user']['email']) { ?>
     <h1>Already Logged In</h1>
         <a href="logout.php">Logout</a>
+        <a href="formchangepassword.php">Change Password</a>
     <?php } else { ?>
     <h2  class="text-danger">Login Info</h2>
     <form action="login.php" method="post">
@@ -30,6 +31,7 @@
         </div>
         <button type="submit" class="form-control btn btn-success">Login</button>
         <a href="regitationform.php" class="form-control mt-2 btn btn-primary">Sign up</a>
+        <a href="forget.php" >Forget Password?</a>
     </form>
     <?php } ?>
 </div>
